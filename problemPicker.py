@@ -1,17 +1,17 @@
 import random
 
 
-def getData(self,fileName):
+def getData(fileName):
     with open (fileName, 'r') as file:
         data = file.read().replace('\n', '')
 
     return data
 
-def pickQuestion(self,data):
+def pickQuestion(data):
     question = random.choice(data)
     return question
 
-def removeQuestion(self,fileName, question):
+def removeQuestion(fileName, question):
     with open(fileName, 'r') as file:
         lines = file.readlines()
 
@@ -26,10 +26,16 @@ def removeQuestion(self,fileName, question):
     
 if __name__ == "__main__":
     fileName = input("What is the name of your Question file?: ")
-    data = getData(fileName)
-    question = pickQuestion(data)
-    removeQuestion(fileName,question)
-    print(question)
+    try:
+        data = getData(fileName)
+        question = pickQuestion(data)
+        removeQuestion(fileName,question)
+        print(question)
+    except IndexError:
+        print("Congratulations! It looks like you have completed all the questions")
+    except FileNotFoundError:
+        print("I couldn't find that file check your spelling and rerun the program")
+
 
                     
 
