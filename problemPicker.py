@@ -34,10 +34,5 @@ if __name__ == "__main__":
     except IndexError:
         print("Congratulations! It looks like you have completed all the questions")
     except FileNotFoundError:
-        print("I couldn't find that file check your spelling and rerun the program")
+        print("I couldn't find that file, make sure it exists in the same folder as the script")
 
-
-                    
-
-    
-        
