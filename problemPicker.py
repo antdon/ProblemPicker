@@ -4,6 +4,7 @@ import random
 def getData(fileName):
     with open (fileName, 'r') as file:
         data = file.read().replace('\n', '')
+        data = data.split(',')
 
     return data
 
