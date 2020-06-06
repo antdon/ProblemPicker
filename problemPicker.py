@@ -18,7 +18,7 @@ def removeQuestion(fileName, question):
 
     with open(fileName, 'w') as file:
         for line in lines:
-            if line.strip('\n') != question:
+            if line.strip(',\n') != question:
                 file.write(line)
         
         file.truncate()
