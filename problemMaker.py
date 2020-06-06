@@ -5,6 +5,11 @@ A4 = 31
 A5 = 19
 A6 = 19
 B = 10
+Ex15 = 8
+Ex16 = 9
+Ex17 = 8
+Ex18 = 8
+Ex19 = 7
 
 
 if __name__ == "__main__":
@@ -23,5 +28,21 @@ if __name__ == "__main__":
             file.write('A6 Q'+str(question)+',' +'\n')
         for question in range(1,B+1):
             file.write('B Q' + str(question)+',' +'\n')
+        for question in range(1,Ex15+1):
+            file.write('2015 Exam Q' + str(question)+',' +'\n')
+        for question in range(1,Ex16+1):
+            file.write('2016 Exam Q' + str(question)+',' +'\n')
+        for question in range(1,Ex17+1):
+            file.write('2017 Exam Q' + str(question)+',' +'\n')
+        for question in range(1,Ex18+1):
+            file.write('2018 Exam Q' + str(question)+',' +'\n')
+        for question in range(1,Ex19+1):
+            file.write('2019 Exam Q' + str(question)+',' +'\n')
+        
+        
+        
+        
+        
+        
 
 
